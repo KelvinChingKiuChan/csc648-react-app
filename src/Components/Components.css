@@ -1,0 +1,40 @@
+.Navigation{
+    background: transparent;
+}
+
+.searchIcon {
+    width: 50px !important;
+    border-left: 1px lightgray;
+    color: white;
+
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    border: 1px black;
+}
+
+.rightIcon {
+    margin-right: 5px;
+    color: white;
+}
+
+.frontStyle{
+    font-family: "Lucida Handwriting";
+}
+
+.onTop{
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.wordFront{
+    color: white;
+    font-family: "Comic Sans MS";
+    text-decoration-color: transparent;
+}
