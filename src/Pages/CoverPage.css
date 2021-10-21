@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+
+#textFont {
+    font-family: 'Work Sans', sans-serif;
+}
+.Page {
+    background: white;
+}
+
+.image {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%;
+}
+
+.image img {
+    position: absolute;
+}
+
+.latest {
+    display: flex;
+    align-items: center;
+}
+
+/*change layout of "latest News, "Top3", "More com""*/
+.top3 {
+    font-family: "Copperplate Gothic Light";
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font: 14px/1 'Open Sans', sans-serif;
+    color: #555;
+    background: #eee;
+}
+
+#tsum-tabs h1 {
+    padding: 50px 0;
+    font-weight: 400;
+    text-align: center;
+}
+
+#tsum-tabs p {
+    margin: 0 0 20px;
+    line-height: 1.5;
+}
+
+#tsum-tabs main {
+    min-width: 320px;
+    max-width: 800px;
+    padding: 50px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+#tsum-tabs section {
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid #ddd;
+}
+
+#tsum-tabs input {
+    display: none;
+}
+
+#tsum-tabs label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #bbb;
+    border: 1px solid transparent;
+}
+
+#tsum-tabs label:before {
+    font-family: fontawesome;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+/*Change the icon for all the icon code plz go to website below*/
+/*https://fontawesome.com/v5.15/icons?d=gallery&p=2*/
+#tsum-tabs label[for*='1']:before {
+    content: '\f080';
+}
+
+#tsum-tabs label[for*='2']:before {
+    content: '\f06d';
+}
+
+#tsum-tabs label[for*='3']:before {
+    content: '\f1a9';
+}
+
+#tsum-tabs label:hover {
+    color: #888;
+    cursor: pointer;
+}
+
+/*change the pattern of 3 tabs*/
+#tsum-tabs input:checked + label {
+    color: #555;
+    border: 1px solid #ddd;
+    border-top: 5px solid orange;
+    border-bottom: 1px solid #fff;
+    background: lightcyan;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#tsum-tabs input:checked + label:hover{
+    transform: scale(0.95);
+}
+
+#tsum-tabs  nav .tab{
+    /*transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);*/
+}
+/*hide content when not click*/
+#tsum-tabs #tab1:checked ~ #content1,
+#tsum-tabs #tab2:checked ~ #content2,
+#tsum-tabs #tab3:checked ~ #content3,
+#tsum-tabs #tab4:checked ~ #content4 {
+    display: block;
+}
+
+@media screen and (max-width: 650px) {
+    #tsum-tabs label {
+        font-size: 0;
+    }
+
+    #tsum-tabs label:before {
+        margin: 0;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #tsum-tabs label {
+        padding: 15px;
+    }
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    animation: fadeIn 700ms ease-in-out 1s both;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.topStyle {
+    display: flex;
+    align-items: center;
+    font-family: "Segoe Print";
+    font-weight: bold;
+    font-size: medium;
+}
+
+/*10/9/2021 add below*/
+
+.title{
+    font-size: larger;
+    font-family: "JetBrains Mono ExtraBold";
+    font-weight: bold;
+    padding-top: 21px;
+}
+
+.viewer{
+    padding-top: 21px;
+}
+
+.paper_hover{
+    transition: transform 3s;
+}
+
+.vertical_img{
+    transform: translateX(-2rem);
+    position: relative;
+    border-radius: 0rem;
+    transition: transform 2s;
+    background-size: cover;
+
+}
+
+.paper_hover:hover{
+    transform: scale(1.05);
+}
+
+.paper_hover:hover .vertical_img{
+    transform: scale(1.05);
+}
+
+.css-vj1n65-MuiGrid-root {
+    box-sizing: border-box;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-height: inherit;
+    overflow: hidden;
+    gap: 12px;
+}
+
+.css-vj1n65-MuiGrid-root {
+    box-sizing: border-box;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-height: inherit;
+    overflow: hidden;
+    grid-gap: 12px;
+    gap: 26px;
+}
